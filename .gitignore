@@ -1,0 +1,8 @@
+# python
+.python-version
+youryoutubetutor.egg-info/
+.venv
+__pycache__/
+
+# data
+*.json

@@ -1,0 +1,22 @@
+[project]
+name = "youryoutubetutor"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=2.8.0",
+    "typer>=0.20.0",
+    "youtube-transcript-api>=1.2.3",
+]
+
+
+[tool.setuptools]
+packages = ["src", "prompts"]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+tutor = "src.cli.main:main"
